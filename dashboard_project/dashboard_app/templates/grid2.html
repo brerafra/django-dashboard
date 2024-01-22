@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<script>
+    $(document).ready(function(){
+        $("#dash1").removeClass("active")
+        $("#dash2").addClass("active")
+        $("#dash3").removeClass("active")
+    })
+</script>
+<div class="col-8 py-1" >
+    <div class="container overflow-auto" style="height: 550px;">
+        <div class="row">
+            <div class="col-3 card m-2">
+                <div class="card-body">
+                    <h4 class="card-title">Usuarios en sistema</h4>
+                    <p class="card-text">El total de usuarios en el sistema es: {{users}}.</p>
+                    <a href="#" class="btn btn-primary">Ver mas</a>
+                </div>
+            </div>
+            <div class="col-3 card m-2">
+                <div class="card-body">
+                    <h4 class="card-title">Usuarios en sistema</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="btn btn-primary">See profile</a>
+                </div>
+            </div>
+            <div class="col-3 card m-2">
+                <div class="card-body">
+                    <h4 class="card-title">Usuarios en sistema</h4>
+                    <p class="card-text">El total de usuarios en el sistema es: {{users}}.</p>
+                    <a href="#" class="btn btn-primary">Ver mas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-2 py-1">
+    <div class="container overflow-auto" style="height: 550px;">
+        <h6>Event 1</h6>
+        <hr>
+        <h6>Event 2</h6>
+        <hr>
+        <h6>Event 3</h6>
+        <hr>
+        <h6>Event 4</h6>
+        <hr>
+        <h6>Event 5</h6>
+        <hr>
+        <h6>Event 6</h6>
+        <hr>
+        <h6>Event 7</h6>
+        <hr>
+        <h6>Event 8</h6>
+        <hr>
+        <h6>Event 9</h6>
+        <hr>
+        <h6>Event 10</h6>
+    </div>
+</div>
+{% endblock %}

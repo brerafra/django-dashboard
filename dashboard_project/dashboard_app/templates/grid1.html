@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<script>
+    $(document).ready(function(){
+        $("#dash1").addClass("active")
+        $("#dash2").removeClass("active")
+        $("#dash3").removeClass("active")
+    })
+</script>
+<div class="col py-1 px-0" >
+    <div class="container overflow-auto" style="height: 550px;">
+        <div class="row">
+            <div class="col-3 card m-2">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="btn btn-primary">See profile</a>
+                </div>
+            </div>
+            <div class="col-3 card m-2">
+                <div class="card-body">
+                    <h4 class="card-title">Usuarios en sistema</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="btn btn-primary">See profile</a>
+                </div>
+            </div>
+            <div class="col-3 card m-2">
+                <div class="card-body">
+                    <h4 class="card-title">Usuarios en sistema</h4>
+                    <p class="card-text">El total de usuarios en el sistema es: {{users}}.</p>
+                    <a href="#" class="btn btn-primary">Ver mas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

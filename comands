@@ -1,0 +1,8 @@
+django-admin startproject dashboard_project
+python.exe .\manage.py startapp dashboard_app
+
+py.exe .\manage.py makemigrations
+py.exe .\manage.py migrate
+py.exe .\manage.py createsuperuser
+
+python manage runserver 0.0.0.0:8000
